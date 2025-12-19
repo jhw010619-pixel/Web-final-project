@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lall Coll | 카페 랄콜</title>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- [헤더] -->
+    <header>
+        <div class="header-logo-area">
+            <h1 class="logo">
+                <a href="#home">
+                   <img src="images/logo.PNG" alt="Lall Coll" class="logo-img" width="150">
+                </a>
+            </h1>
+        </div>
+
+        <div class="header-nav-bar">
+            <div class="container nav-flex">
+                <div class="nav-left">
+                    <a href="#" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search</span>
+                    </a>
+                </div>
+                <nav class="nav-center">
+                    <ul id="nav-menu">
+                        <li><a href="#about">소개</a></li>
+                        <li><a href="#menu">메뉴</a></li>
+                        <li><a href="#goods">굿즈</a></li>
+                        <li><a href="#rental">대관</a></li>
+                        <li><a href="#notice">공지</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-right">
+                    <a href="#" class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <div class="mobile-menu-btn" onclick="toggleMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <!-- [1. 홈] -->
+    <section id="home" class="main-home fade-in">
+        <div class="container">
+            <div class="home-grid-top">
+                <div class="home-img-box vertical"><img src="images/greenzone.jpg" alt="그린존"></div>
+                <div class="home-img-box vertical"><img src="images/christmaslallcoll.jpg" alt="포토존1"></div>
+                <div class="home-img-box vertical"><img src="images/wallsantalallcoll.jpg" alt="포토존2"></div>
+            </div>
+
+            <div class="home-grid-bottom">
+                <div class="home-img-box signature-box">
+                    <img src="images/photozone.jpeg" alt="포토존3">
+                </div>
+                <div class="home-img-box signature-box">
+                    <img src="images/bar.jpeg" alt="바">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- [2. 소개] -->
+    <section id="about" class="section-padding fade-in">
+        <div class="container">
+            <div class="header-line-layout">
+                <h2 class="sect-title">Story</h2>
+            </div>
+            <div class="about-story">
+                <div class="story-img">
+                    <video autoplay muted loop playsinline>
+                        <source src="images/lallcoll_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="story-text">
+                    <h3 class="sect-subtitle" style="margin-top: 0;">따뜻함과 여유가 머무는 공간, 카페 랄콜</h3><br><br>
+                    <p class="desc">
+                        카페 랄콜은 진주의 많은 카페 중 가장 규모가 큰 [1800평] 카페입니다.<br>
+                        넓은 정원, 유럽 광장을 모티브로 한 포토존, 핑크존과 그린존의 넓은 공간.<br>
+                        점심 식사 대용으로 독일식 팬케이크인 더치베이비를 즐기실 수 있습니다.<br>
+                        최상의 원두와 재료를 이용하여 커피와 음식 맛집이 되기 위해 노력하고 있습니다.<br>
+                        즐거운 카페를 만들겠다는 카페랄콜의 오픈 이유를 잊지 않고 운영해나갈 것을 약속합니다.<br><br>
+                        감사합니다!<br>
+                    </p>
+                    <div class="story-icons">
+                        <span><i class="fa-solid fa-square-parking"></i> 주차장 완비 (50대)</span>
+                        <span><i class="fa-solid fa-wifi"></i> 무료 와이파이 </span>
+                        <span><i class="fa-solid fa-house"></i> 단체석 및 룸 완비 (대1, 소2)</span>
+                        <span><i class="fa-solid fa-dog"></i> 애견 동반 가능 (야외)</span>
+                        <span><i class="fa-solid fa-baby"></i> 유아 의자 및 기저귀 교환대 배치</span>
+                        <span><i class="fa-solid fa-child"></i> 케어키드존 (Care Kidz Zone)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-location">
+                <div class="header-line-layout" style="text-align: center;">
+                    <h2 class="sect-title">Location</h2>
+                    <p class="sect-subtitle">경상남도 진주시 미천면 오방로 487번길 58</p>
+                </div>
+                <div class="map-box" style="margin-top: 30px; border: none; background: none; box-shadow: none;">
+                    <iframe 
+                        width="100%" 
+                        height="500" 
+                        style="border:0; display: block;" 
+                        loading="lazy" 
+                        allowfullscreen 
+                        src="https://maps.google.com/maps?q=경상남도+진주시+미천면+벌당리+산77&t=m&z=15&output=embed&iwloc=near">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- [3. 메뉴] -->
+    <section id="menu" class="section-padding fade-in">
+        <div class="container">
+            <div class="header-line-layout">
+                <h2 class="sect-title">Menu</h2>
+            </div>
+            
+            <div class="menu-proto-layout">
+                <!-- 시그니처 음료 -->
+                <div class="menu-col">
+                    <div class="col-header"><h3>시그니처 음료</h3></div>
+                    <div class="proto-grid">
+                        <div class="proto-item"><div class="tiny-img"><img src="images/blacksesamecreamlatte.jpg" alt="흑임자 크림 라떼"></div><p>흑임자 크림 라떼</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/peanutcreamlatte.jpg" alt="땅콩 크림 라떼"></div><p>땅콩 크림 라떼</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/lattececream.jpg" alt="라떼스크림"></div><p>라떼스크림</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/lemoneinspanner.jpg" alt="레몬 아인슈페너"></div><p>레몬 아인슈페너</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/creammocha.jpg" alt="크림 모카"></div><p>크림 모카</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/blacksesamesundae.jpg" alt="흑임자 선데이"></div><p>흑임자 선데이</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/melonsoda.jpg" alt="메론 소다"></div><p>메론 소다</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/hallabongearlgreytea.jpg" alt="한라봉 얼그레이 티"></div><p>한라봉 얼그레이 티</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/misutgarubananajuice.jpg" alt="미숫가루 바나나 주스"></div><p>미숫가루 바나나 주스</p><div class="tiny-line"></div></div>
+                    </div>
+                </div>
+
+                <!-- 더치베이비 -->
+                <div class="menu-col">
+                    <div class="col-header"><h3>더치베이비</h3></div>
+                    <div class="proto-grid">
+                        <div class="proto-item"><div class="tiny-img"><img src="images/trufflemushroom.jpg" alt="트러플 버섯"></div><p>트러플 버섯</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/eggbaconavocado.jpg" alt="에그 베이컨 아보카도"></div><p>에그 베이컨 아보카도</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/fruitfreshcream.jpg" alt="푸룻 생크림"></div><p>푸룻 생크림</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/banananutcrumble.jpg" alt="바나나 넛 크럼블"></div><p>바나나 넛 크럼블</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/lemoncurdberry.jpg" alt="레몬 커드 베리"></div><p>레몬 커드 베리</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/applesinnamon.jpg" alt="애플 시나몬"></div><p>애플 시나몬</p><div class="tiny-line"></div></div>
+                    </div>
+                </div>
+
+                <!-- 시즌 메뉴 -->
+                <div class="menu-col">
+                    <div class="col-header"><h3>시즌 메뉴</h3></div>
+                    <div class="proto-grid">
+                        <div class="proto-item"><div class="tiny-img"><img src="images/strawberrycremepatissier.jpg" alt="딸기 크렘 파티시에르"></div><p>딸기 크렘 파티시에르</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/strawberrycake.jpg" alt="딸기 케이크"></div><p>딸기 케이크</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/berrymilktea.jpg" alt="베리 밀크티 프토"></div><p>베리 밀크티 프토</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/chocolatte.jpg" alt="마시멜로 핫초코"></div><p>마시멜로 핫초코</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/sb.jpg" alt="시금치 바게트"></div><p>시금치 바게트</p><div class="tiny-line"></div></div>
+                        <div class="proto-item"><div class="tiny-img"><img src="images/copicolapizza.jpg" alt="콜피콜라 피자"></div><p>콜피콜라 피자</p><div class="tiny-line"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 메뉴 더보기 -->
+            <div class="home-more-btn-area">
+                <a href="images/menu.jpg" target="_blank" class="btn-outline">메뉴 더보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- [4. 굿즈] -->
+    <section id="goods" class="section-padding fade-in">
+        <div class="container">
+            <div class="header-line-layout">
+                <h2 class="sect-title">Goods</h2>
+            </div>
+            
+            <div class="goods-grid">
+                <!-- 1. 랄콜 머그컵 -->
+                <div class="goods-item">
+                    <div class="goods-img">
+                        <img src="images/mug.jpg" alt="랄콜 머그컵">
+                    </div>
+                    <p class="g-name">랄콜 머그컵</p>
+                    <p class="g-price">₩ 7,000</p>
+                </div>
+
+                <!-- 2. 띠부실 -->
+                <div class="goods-item">
+                    <div class="goods-img">
+                        <img src="images/sticker.jpg" alt="더치베이비 띠부실 6종 set">
+                    </div>
+                    <p class="g-name">더치베이비 띠부실 6종 set</p>
+                    <p class="g-price">₩ 4,500</p>
+                </div>
+
+                <!-- 3. 준비 중 … -->
+                <div class="goods-item">
+                    <div class="goods-img">
+                        <img src="images/cat.jpeg" alt="준비 중 …">
+                    </div>
+                    <p class="g-name">준비 중 …</p>
+                    <p class="g-price">₩ 0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [5. 대관] -->
+    <section id="rental" class="section-padding fade-in">
+        <div class="container">
+            <div class="header-line-layout">
+                <h2 class="sect-title">Rental Service</h2>
+            </div>
+            <div class="rental-box">
+                <div class="rental-info">
+                    <h3>대관 안내</h3>
+                    <p class="desc-sm">각종 동호회, 세미나, 소규모 파티, 촬영 등을 위한 전채 대관 및 룸 대여 서비스를 제공합니다.</p><br>
+                    <ul class="rental-list">
+                        <li>전체 대관 : 영업 시간 외 (오전/야간) 가능</li>
+                        <li>룸 대여 : 8인 이상 예약 시 이용 가능</li>
+                        <li>이용 문의 : 최소 일주일 전 예약 필수</li>
+                        <li>음향 장비 및 빔 프로젝터 이용 가능 (별도 문의)</li><br><br><br>
+                    <p class="desc-sm">자세한 규정 및 비용은 우측 문의 폼 또는 연락처로 문의해주시면 친절하게 안내 드리겠습니다.</p>
+                    </ul>
+                </div>
+                <div class="rental-form-wrap">
+                    <h3>문의하기</h3>
+                    <form onsubmit="alert('문의 완료'); return false;">
+                        <input type="text" placeholder="이름/단체명(소속)" required>
+                        <input type="tel" placeholder="연락처" required>
+                        <input type="date" required aria-label="희망 날짜">
+                        <textarea placeholder="문의 내용"></textarea>
+                        
+                        <!-- 수정: 버튼 중앙 정렬을 위한 div 추가 -->
+                        <div style="text-align: center; margin-top: 15px;">
+                            <button type="submit" class="btn-outline">문의 접수</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [6. 공지사항] -->
+    <section id="notice" class="section-padding fade-in">
+        <div class="container">
+            <div class="header-line-layout">
+                <h2 class="sect-title">News & Event</h2>
+                <p class="sect-subtitle" style="text-align:center;">카페 랄콜의 새로운 소식을 확인하세요.</p>
+            </div>
+            <div class="notice-board">
+                <div class="notice-item">
+                    <span class="n-date">2025. 12. 10</span>
+                    <div class="n-content"><h4>겨울 신메뉴 "딸기 크렘 파티시에르 더치베이비" 출시</h4><p>겨울 한정, "딸기 크렘 파티시에르 더치베이비"가 판매됩니다!</p></div>
+                </div>
+
+                <div class="notice-item">
+                    <span class="n-date">2025. 11. 29 </span>
+                    <div class="n-content"><h4>겨울 영업 시간 및 휴무일 변동 안내</h4><p>2025년 12월부터 2026년 4월까지 겨울 영업 시간으로 변경됩니다.</p></div>
+                </div>
+
+                <div class="notice-item">
+                    <span class="n-date">2025. 10. 23</span>
+                    <div class="n-content"><h4>10월 24일 금요일 임시 휴무</h4><p>개인사정으로 10월 24일 금요일은 임시 휴무입니다! 10월 25일 토요일에 봬요 ^'ㅅ'^ฅ⸃⸃</p></div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="javascript:void(0)" class="page-link prev"><i class="fa-solid fa-chevron-left"></i></a>
+                <a href="javascript:void(0)" class="page-link active">1</a>
+                <a href="javascript:void(0)" class="page-link">2</a>
+                <a href="javascript:void(0)" class="page-link">3</a>
+                <a href="javascript:void(0)" class="page-link next"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>  
+    
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <!-- 인스타그램 -->
+                <a href="https://www.instagram.com/lallacolline.cafe" target="_blank" class="insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <!-- 로고 -->
+                <a href="#home" class="footer-logo-link">
+                    <img src="images/logo.PNG" alt="Lall Coll Logo" class="footer-logo-img">
+                </a>
+            </div>
+
+            <!-- 정보 -->
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <span>카페 랄콜 (Cafe Lall Coll)</span> <br class="m-br">
+                    <span>경남 진주시 미천면 오방로 487번길 58</span> <br>
+                    <span>Tel : 0507-1399-1319 ㅣ 사업자등록번호 : 676-30-01045</span> <br class="m-br">
+                    <span>lallacolline.cafe@naver.com</span>
+                </div>
+                <p class="copyright">COPYRIGHT © 2025 Café Lall Coll. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
